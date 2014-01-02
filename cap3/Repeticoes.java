@@ -1,6 +1,6 @@
 class Repeticoes {
 
-  public static void main(String[] args){
+  public static void main(String[] args) {
  
     // while
     int idade = 15;
@@ -14,6 +14,10 @@ class Repeticoes {
       System.out.println(i);
       i++;
     
+    }
+
+    for (int i2 = 0; i2 < 10; i2 = i2 + 1) {
+      System.out.println("Hello World!");
     }
 
   }
