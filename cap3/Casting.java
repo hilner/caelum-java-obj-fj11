@@ -23,7 +23,7 @@ class Casting {
     // da mesma forma isso nao compila
 
     long x = 10000;
-    int i4 = x;
+    int i4 = (int) x;
     
   }
 
