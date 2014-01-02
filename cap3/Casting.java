@@ -25,8 +25,9 @@ class Casting {
     long x = 10000;
     int i4 = (int) x;
     
-    // casos não comuns
-    float x = 0.0;
+    // casos nao comuns
+    // correcao
+    float x1 = 0.0f;
 
   }
 
