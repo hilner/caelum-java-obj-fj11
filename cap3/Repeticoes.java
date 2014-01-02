@@ -22,10 +22,25 @@ class Repeticoes {
 
     // pos incremento ++
     int i2 = 5;
-    int x = i2++;
-
     System.out.println("Valor de i2 = 5 -> "+ i2);
-    System.out.println("Valor de x = i2++ -> "+ x);
+
+
+    int x = i2++; // x ainda valera 5
+
+    System.out.println("Valor de i2++ -> "+ i2);
+    System.out.println("Valor de x = i2++ -> "+ x); 
+
+    System.out.println();
+    // pre incremento ++
+    int i3 = 5;    
+    System.out.println("Valor de i3 = 5 -> "+ i3); 
+
+    int x2 = ++i3; // x2 agora sera 6
+
+    System.out.println("Valor de ++i3 -> "+ i3);
+    System.out.println("Valor de x2 = ++i3 -> "+ x2); 
+
+
 
   }
 
