@@ -20,7 +20,7 @@ class Casting {
  
     System.out.println("Casting de d3 em i3 foi: "+ i3);
 
-    // da mesma forma isso nao compila
+    // agora esta compilando
 
     long x = 10000;
     int i4 = (int) x;
