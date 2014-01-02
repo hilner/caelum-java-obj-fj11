@@ -13,6 +13,11 @@ class Casting {
     // mas assim compila
     int c = 5;
     double d2 = c;
+
+    // forcando um float / double caber num int - Casting
+    double d3 = 3.14;
+    int i3 = (int) d3;
+
     
   }
 
