@@ -7,9 +7,10 @@ class Condicionais {
     if (idade < 18) {
       System.out.println("Nao pode entrar!");
     
+    } else {
+      System.out.println("Pode entrar!");
+    
     }
-
-
 
   }
 
