@@ -20,6 +20,13 @@ class Repeticoes {
       System.out.println("Hello World!");
     }
 
+    // pos incremento ++
+    int i2 = 5;
+    int x = i2++;
+
+    System.out.println("Valor de i2 = 5 -> "+ i2);
+    System.out.println("Valor de x = i2++ -> "+ x);
+
   }
 
 }
