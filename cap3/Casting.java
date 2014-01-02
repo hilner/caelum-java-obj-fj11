@@ -17,7 +17,13 @@ class Casting {
     // forcando um float / double caber num int - Casting
     double d3 = 3.14;
     int i3 = (int) d3;
+ 
+    System.out.println("Casting de d3 em i3 foi: "+ i3);
 
+    // da mesma forma isso nao compila
+
+    long x = 10000;
+    int i4 = x;
     
   }
 
