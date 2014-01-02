@@ -5,7 +5,11 @@ class Condicionais {
     // if e else
     int idade = 15;
     boolean amigoDoDono = true;
-    if (idade < 18 && amigoDoDono == false) {
+
+    // deixando o codigo mais legivel
+    // utilizando o operador de negacao, o !
+
+    if (idade < 18 && !amigoDoDono) {
       System.out.println("Nao pode entrar!");
     
     } else {
