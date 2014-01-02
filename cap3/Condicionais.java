@@ -4,7 +4,8 @@ class Condicionais {
  
     // if e else
     int idade = 15;
-    if (idade < 18) {
+    boolean amigoDoDono = true;
+    if (idade < 18 && amigoDoDono == false) {
       System.out.println("Nao pode entrar!");
     
     } else {
