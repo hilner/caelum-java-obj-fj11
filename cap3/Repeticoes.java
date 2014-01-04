@@ -41,6 +41,13 @@ class Repeticoes {
     System.out.println("Valor de x2 = ++i3 -> "+ x2); 
 
 
+    // controlando loops
+    for (int i4 = 3; i4 < 100; i4++) {
+      if (i4 % 19 == 0) {
+        System.out.println("Achado num. divisivel por 19: " + i4);
+        break;
+      }
+    }
 
   }
 
