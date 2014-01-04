@@ -42,11 +42,22 @@ class Repeticoes {
 
 
     // controlando loops
+    // break
     for (int i4 = 3; i4 < 100; i4++) {
       if (i4 % 19 == 0) {
         System.out.println("Achado num. divisivel por 19: " + i4);
         break;
       }
+    }
+
+    // continue
+    for (int i5 = 0; i5 < 100; i5++) {
+      if (i5 > 50 && i5 < 60) {
+        continue;
+      
+      }
+      System.out.println(i5);
+
     }
 
   }
