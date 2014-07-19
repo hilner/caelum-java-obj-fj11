@@ -6,9 +6,14 @@ class Programa {
 		double saldo;
 		double limite;
 
-		void saca (double quantidade) {
-			double novoSaldo = this.saldo - quantidade;
-			this.saldo = novoSaldo;
+		boolean saca (double valor) {
+			if (this.saldo < valor) {
+				return false;
+			}
+			else {
+				this.saldo = this.saldo - valor;
+				return true;
+			}
 		}
 
 		void deposita (double quantidade) {
@@ -28,10 +33,12 @@ class Programa {
 		System.out.println("Saldo inicial: " + minhaConta.saldo);
 
 		// saca 200 reais
-		minhaConta.saca(200);
-
-		System.out.println("Retirada: " + 200 + " reais");
-		System.out.println("Saldo atualizado: " + minhaConta.saldo);
+		if (minhaConta.saca(200)) {
+			System.out.println("Retirada: " + 200 + " reais");
+			System.out.println("Saldo atualizado: " + minhaConta.saldo);
+		} else {
+			System.out.println("Não consegui sacar");
+		}
 
 		// deposita 500 reais
 		minhaConta.deposita(500);
