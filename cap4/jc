@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 if [ "$1" != "" ]; then
-	echo "Compilind and run code java"
-	javac $1".java"
+	echo "Compilind and Run code java"
+	ext=.java
+	javac $1$ext
 	java $1
 else
 	echo "JC script parameter 1 is empty"
