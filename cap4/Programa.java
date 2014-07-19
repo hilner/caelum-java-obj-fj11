@@ -30,7 +30,6 @@ class Programa {
 		minhaConta.dono = "Duke";
 		minhaConta.saldo = 1000.0;
 
-		System.out.println("minhaConta - Saldo inicial: " + minhaConta.saldo);
 
 		// saca 200 reais
 		if (minhaConta.saca(200)) {
@@ -50,7 +49,7 @@ class Programa {
 		meuSonho = new Conta();
 		meuSonho.dono = "Eumesmo";
 		meuSonho.saldo = 15000000;
-		
+
 		System.out.println("meuSonho - Saldo inicial: " + minhaConta.saldo);
 
 	}
