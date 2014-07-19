@@ -30,21 +30,28 @@ class Programa {
 		minhaConta.dono = "Duke";
 		minhaConta.saldo = 1000.0;
 
-		System.out.println("Saldo inicial: " + minhaConta.saldo);
+		System.out.println("minhaConta - Saldo inicial: " + minhaConta.saldo);
 
 		// saca 200 reais
 		if (minhaConta.saca(200)) {
-			System.out.println("Retirada: " + 200 + " reais");
-			System.out.println("Saldo atualizado: " + minhaConta.saldo);
+			System.out.println("minhaConta - Retirada: " + 200 + " reais");
+			System.out.println("minhaConta - Saldo atualizado: " + minhaConta.saldo);
 		} else {
-			System.out.println("Não consegui sacar");
+			System.out.println("minhaConta - Não consegui sacar");
 		}
 
 		// deposita 500 reais
 		minhaConta.deposita(500);
 
-		System.out.println("Deposito: " + 500 + " reais");
-		System.out.println("Saldo atualizado: " + minhaConta.saldo);
+		System.out.println("minhaConta - Deposito: " + 500 + " reais");
+		System.out.println("minhaConta - Saldo atualizado: " + minhaConta.saldo);
+
+		Conta meuSonho;
+		meuSonho = new Conta();
+		meuSonho.dono = "Eumesmo";
+		meuSonho.saldo = 15000000;
+
+		System.out.println("meuSonho - Saldo inicial: " + minhaConta.saldo);
 
 	}
 }

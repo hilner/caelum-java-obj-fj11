@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if [ "$1" != "" ]; then
+	echo "Compilind and run code java"
+	javac $1".java"
+	java $1
+else
+	echo "JC script parameter 1 is empty"
+	echo "usage: "
+	echo "jc <NameOfFileOnly>"
+fi
