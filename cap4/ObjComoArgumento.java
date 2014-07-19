@@ -19,7 +19,7 @@ class ObjComoArgumento {
 			this.saldo += quantidade;
 		}
 
-		boolean transfere(Conta destino, double valor) {
+		boolean transferePara(Conta destino, double valor) {
 			boolean retirou = this.saca(valor);
 			if (retirou) {
 				// sem sacar
@@ -40,7 +40,7 @@ class ObjComoArgumento {
 		c2.dono = "Donald";
 		c2.saldo = 5000;
 
-		c1.transfere(c2, 1000);
+		c1.transferePara(c2, 1000);
 
 		System.out.println("Saldo c1 = " + c1.saldo);
 		System.out.println("Saldo c2 = " + c2.saldo);
