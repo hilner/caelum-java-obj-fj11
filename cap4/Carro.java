@@ -4,6 +4,7 @@ class Carro {
 	String modelo;
 	double velocidadeAtual;
 	double velocidadeMaxima;
+	Motor motor;
 
 	// liga o carro
 	void liga() {
