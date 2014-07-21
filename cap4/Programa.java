@@ -1,30 +1,9 @@
 class Programa {
 
-	public static class Conta {
-		int numero;
-		String dono;
-		double saldo;
-		double limite;
-
-		boolean saca (double valor) {
-			if (this.saldo < valor) {
-				return false;
-			}
-			else {
-				this.saldo = this.saldo - valor;
-				return true;
-			}
-		}
-
-		void deposita (double quantidade) {
-			this.saldo += quantidade;
-		}
-	}
-
 	public static void main (String[] args) {
 		// criando a conta
-		Conta minhaConta;
-		minhaConta = new Conta();
+		Conta1 minhaConta;
+		minhaConta = new Conta1();
 
 		// alterando os valores de minhaConta
 		minhaConta.dono = "Duke";
@@ -45,8 +24,8 @@ class Programa {
 		System.out.println("minhaConta - Deposito: " + 500 + " reais");
 		System.out.println("minhaConta - Saldo atualizado: " + minhaConta.saldo);
 
-		Conta meuSonho;
-		meuSonho = new Conta();
+		Conta1 meuSonho;
+		meuSonho = new Conta1();
 		meuSonho.dono = "Eumesmo";
 		meuSonho.saldo = 15000000;
 

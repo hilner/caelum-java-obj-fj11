@@ -1,31 +1,11 @@
 class TestaReferencias2 {
-	public static class Conta {
-		int numero;
-		String dono;
-		double saldo;
-		double limite;
-
-		boolean saca (double valor) {
-			if (this.saldo < valor) {
-				return false;
-			}
-			else {
-				this.saldo = this.saldo - valor;
-				return true;
-			}
-		}
-
-		void deposita (double quantidade) {
-			this.saldo += quantidade;
-		}
-	}
 
 	public static void main (String[] args) {
-		Conta c1 = new Conta();
+		Conta1 c1 = new Conta1();
 		c1.dono = "Duke";
 		c1.saldo = 227;
 
-		Conta c2 = new Conta(); 
+		Conta1 c2 = new Conta1(); 
 		c2.dono = "Duke";
 		c2.saldo = 227;
 
