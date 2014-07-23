@@ -13,11 +13,12 @@ class Funcionario {
 	};
 
 	void mostra() {
-		System.out.println(this.nome);
-		System.out.println(this.departamento);
-		System.out.println(this.salario);
-		System.out.println(this.dataEntrada);
-		System.out.println(this.rg);
+		System.out.println("Nome: " + nome);
+		System.out.println("Departamento: " + departamento);
+		System.out.println("Salario: " + salario);
+		System.out.println("Data da Entrada: " + dataEntrada);
+		System.out.println("RG: " + rg);
+		System.out.println("Ganho Anual: " + calculaGanhoAnual());
 	}
 }
 
