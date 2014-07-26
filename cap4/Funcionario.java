@@ -2,7 +2,7 @@ class Funcionario {
 	String nome;
 	String departamento;
 	double salario;
-	String dataEntrada;
+	Data dataEntrada;
 	String rg;
 	boolean estaNaEmpresa;
 
@@ -16,7 +16,7 @@ class Funcionario {
 		System.out.println("Nome: " + nome);
 		System.out.println("Departamento: " + departamento);
 		System.out.println("Salario: " + salario);
-		System.out.println("Data da Entrada: " + dataEntrada);
+		System.out.println("Data da Entrada: " + dataEntrada.formatada("-"));
 		System.out.println("RG: " + rg);
 		System.out.println("Ganho Anual: " + calculaGanhoAnual());
 	}
