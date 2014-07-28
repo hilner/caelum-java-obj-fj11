@@ -1,7 +1,7 @@
 class PercorrendoArray {
 	void imprimeArray(int[] array) {
-		// não compila !!
-		for (int i = 0; i < ????; ++i) {
+		// todo array tem um atributo length - tamanho do array
+		for (int i = 0; i < array.length; ++i) {
 			System.out.println(array[i]);
 		}
 	}
