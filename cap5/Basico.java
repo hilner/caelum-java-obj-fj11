@@ -12,9 +12,8 @@ class Basico {
 		idades = new int[10];
 		idades[5] = 10;
 
-		System.out.println("Idade contida no elemento " + 5 + " é " + idades[5] + " anos!");
-
-
+		for (int n = 0; n < 10 ; ++n) {
+			System.out.println("Idade contida no elemento " + n + " é " + idades[n] + " anos!");
+		}		
 	}
-	
 }
