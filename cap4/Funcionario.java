@@ -6,7 +6,9 @@ class Funcionario {
 	String rg;
 	boolean estaNaEmpresa;
 
-	void recebeAumento(double aumento) {};
+	void recebeAumento(double aumento) {
+		salario += aumento;
+	};
 
 	double calculaGanhoAnual () {
 		return this.salario * 12;
