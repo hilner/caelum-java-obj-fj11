@@ -7,3 +7,5 @@ Aprenderemos a trabalhar com os seguintes recursos da linguagem Java:
 	• controle de fluxo através de if e else;
 	• instruções de laço for e while, controle de fluxo com break e continue.
 
+Segue exercicios.
+
