@@ -9,3 +9,4 @@ Ao término deste capítulo, você será capaz de:
 	• conceituar classes, atributos e comportamentos;
 	• entender o significado de variáveis e objetos na memória.
 
+Segue exercícios.
