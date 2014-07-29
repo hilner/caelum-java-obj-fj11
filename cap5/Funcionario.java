@@ -2,7 +2,7 @@ class Funcionario {
 	String nome;
 	String departamento;
 	double salario;
-	Data dataEntrada;
+	Data dataEntrada = new Data();
 	String rg;
 	boolean estaNaEmpresa;
 
