@@ -4,7 +4,7 @@ class Empresa {
 	int tam;
 
 	// constructor
-	public Empresa () {
+	public Empresa() {
 		tam = 0;
 		//empregados = new Funcionario[10];
 	}
@@ -13,11 +13,20 @@ class Empresa {
 		if (tam < empregados.length) {
 			System.out.println("\nArray lenght = " + empregados.length);
 			System.out.println("\nElemento = " + tam);
-			this.empregados[tam] = f;
-			this.empregados[tam].mostra();
+			empregados[tam] = f;
+			empregados[tam].mostra();
 			tam++;
 		} else {
 			System.out.println("\nVagas preenchidas!");
+		}
+	}
+
+	void mostraEmpregados() {
+		System.out.println();
+		for (Funcionario i : empregados) { // enhanced-for
+			System.out.println("Funcionário na posição: " + i);
+			i.mostra();
+
 		}
 	}
 }

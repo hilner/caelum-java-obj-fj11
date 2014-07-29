@@ -51,5 +51,7 @@ class TestaEmpresa {
 		f4.estaNaEmpresa = true;
 
 		empresa.adiciona(f4);
+
+		empresa.mostraEmpregados();
 	}
 }
