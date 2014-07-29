@@ -1,7 +1,7 @@
 class TestaEmpresa {
 	public static void main(String[] args) {
 		Empresa emp = new Empresa();
-		emp.empregados = new Funcionario[10];
+		//emp.empregados = new Funcionario[10];
 		Funcionario f1 = new Funcionario();
 		f1.nome = "José";
 		f1.departamento = "Fisica";
