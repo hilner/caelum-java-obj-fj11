@@ -35,7 +35,7 @@ class TestaEmpresa {
 		f3.dataEntrada.mes = 1;
 		f3.dataEntrada.ano = 2014; 
 		f3.rg = "1111111";
-		f3.estaNaEmpresa = true;
+		f3.estaNaEmpresa = false;
 
 		empresa.adiciona(f3);
 
@@ -48,7 +48,7 @@ class TestaEmpresa {
 		f4.dataEntrada.mes = 1;
 		f4.dataEntrada.ano = 2014; 
 		f4.rg = "4444444";
-		f4.estaNaEmpresa = true;
+		f4.estaNaEmpresa = false;
 
 		empresa.adiciona(f4);
 

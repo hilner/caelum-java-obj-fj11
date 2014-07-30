@@ -36,9 +36,22 @@ class Empresa {
 		for (Funcionario i : empregados) {
 			System.out.println("Nome do Funcionário: " + i.nome);
 			System.out.println("Salário: " + i.salario);
+			if (!contem(i)) {
+				System.out.println("*** Funcionário não contratado ***");
+			}
 			totalSalario += i.salario;
 		}
 		System.out.println("\n|||||||||||||||||||||||||||||||||||||||||");
 		System.out.println("Total salários: " + totalSalario);
+	}
+
+	boolean contem(Funcionario f) {
+		boolean contratado = false;
+		for (Funcionario i : empregados) {
+			if (i.nome == f.nome) {
+				contratado = i.estaNaEmpresa;
+			}
+		}
+		return contratado;
 	}
 }
