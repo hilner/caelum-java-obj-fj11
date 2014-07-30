@@ -29,4 +29,16 @@ class Empresa {
 
 		}
 	}
+
+	void mostraSalariosEmpregados() {
+		double totalSalario = 0.0;
+		System.out.println("\n\nSalários dos empregados");
+		for (Funcionario i : empregados) {
+			System.out.println("Nome do Funcionário: " + i.nome);
+			System.out.println("Salário: " + i.salario);
+			totalSalario += i.salario;
+		}
+		System.out.println("\n|||||||||||||||||||||||||||||||||||||||||");
+		System.out.println("Total salários: " + totalSalario);
+	}
 }

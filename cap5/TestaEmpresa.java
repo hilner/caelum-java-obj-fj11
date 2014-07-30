@@ -53,5 +53,7 @@ class TestaEmpresa {
 		empresa.adiciona(f4);
 
 		empresa.mostraEmpregados();
+
+		empresa.mostraSalariosEmpregados();
 	}
 }
