@@ -11,8 +11,6 @@ class Empresa {
 
 	void adiciona(Funcionario f) {
 		if (tam < empregados.length) {
-			System.out.println("\nArray lenght = " + empregados.length);
-			System.out.println("\nElemento = " + tam);
 			empregados[tam] = f;
 			empregados[tam].mostra();
 			tam++;
