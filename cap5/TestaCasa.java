@@ -25,5 +25,7 @@ class TestaCasa {
 		c1.abrirPorta(p3);
 
 		System.out.println(c1.quantasPortasEstaoAbertas() + " estão abertas!"); 
+
+		System.out.println("Total de portas da casa: " + c1.totalDePortas());
 	}
 }
