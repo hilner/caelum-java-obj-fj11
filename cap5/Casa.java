@@ -28,6 +28,7 @@ class Casa {
 		if (qtd < portas.length) {
 			portas[qtd] = p;
 			qtd++;
+			System.out.println("\n" + qtd + " porta adicionada...");
 		} else {
 			System.out.println("\nPortas adicionadas!");
 		}
@@ -41,4 +42,15 @@ class Casa {
 		}
 		return totalPortas;
 	}
+
+	void abrirPorta(Porta p) {
+		int n = p.porta;
+		portas[n-1].estaAberta = true;
+	}
+
+	void fecharPorta(Porta p) {
+		int n = p.porta;
+		portas[n-1].estaAberta = false;
+	}
+
 }
