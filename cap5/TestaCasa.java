@@ -15,6 +15,7 @@ class TestaCasa {
 		p3.porta = 3;
 		p3.estaAberta = false;
 
+		c1.pinta("white");
 		c1.adicionaPorta(p1);
 		c1.adicionaPorta(p2);
 		c1.adicionaPorta(p3);

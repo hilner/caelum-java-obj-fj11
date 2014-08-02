@@ -12,6 +12,7 @@ class Casa {
 
 	void pinta(String s) {
 		cor = s;
+		System.out.println("Pintando a casa de " + cor);
 	}
 
 	int quantasPortasEstaoAbertas() {
