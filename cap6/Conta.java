@@ -2,8 +2,8 @@ class Conta {
 
 	int numero;
 	Cliente titular = new Cliente();
-	double saldo;
-	double limite;
+	private double saldo;
+	private double limite;
 
 	void saca (double valor) {
 		this.saldo = this.saldo - valor;
