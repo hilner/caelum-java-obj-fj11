@@ -5,28 +5,16 @@ class Conta {
 	double saldo;
 	double limite;
 
-	boolean saca (double valor) {
-		if (this.saldo < valor) {
-			return false;
-		}
-		else {
-			this.saldo = this.saldo - valor;
-			return true;
-		}
+	void saca (double valor) {
+		this.saldo = this.saldo - valor;
 	}
 
 	void deposita (double quantidade) {
 		this.saldo += quantidade;
 	}
 
-	boolean transferePara(Conta destino, double valor) {
-		boolean retirou = this.saca(valor);
-		if (retirou) {
-			// sem sacar
-			return false;
-		} else {
-			destino.deposita(valor);
-			return true;
-		}
+	void transferePara(Conta destino, double valor) {
+		this.saca(valor);
+		destino.deposita(valor);
 	}
 }
