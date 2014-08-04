@@ -6,7 +6,7 @@ class Conta {
 	private Cliente titular = new Cliente();
 
 	public double getSaldo() {
-		return this.saldo;
+		return this.saldo + this.limite;
 	}
 
 	public void setSaldo(double saldo) {
