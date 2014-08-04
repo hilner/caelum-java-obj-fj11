@@ -4,12 +4,24 @@ class Cliente {
 	private String cpf;
 	private int idade;
 
+	Cliente(String cpf) {
+		this.setCPF(cpf);
+	}
+
 	public String getNome() {
 		return this.nome;
 	}
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public void setCPF(String cpf) {
+		this.cpf = cpf;
+	}
+
+	public String getCPF() {
+		return this.cpf;
 	}
 
 	public void mudaCPF(String cpf) {

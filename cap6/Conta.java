@@ -1,4 +1,5 @@
 class Conta {
+	private int totalDeContas;
 
 	int numero;
 	private double saldo;
@@ -7,6 +8,8 @@ class Conta {
 
 	Conta(Cliente titular) {
 		this.titular = titular;
+		this.totalDeContas++;
+		System.out.println("\nTotal de Contas: " + this.totalDeContas);
 	}
 
 	public double getSaldo() {
