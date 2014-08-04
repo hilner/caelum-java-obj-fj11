@@ -6,9 +6,10 @@ class Conta {
 	private Cliente titular = new Cliente();
 
 	Conta() {
+		// construtor não é um método
 		System.out.println("Construindo uma conta.");	
 	}
-	
+
 	public double getSaldo() {
 		return this.saldo + this.limite;
 	}
