@@ -14,6 +14,5 @@ class TestaAtributosClasse2 {
 
 		System.out.println("\n***Total de contas criadas " + Conta.getTotalDeContas());
 
-
 	}
 }
