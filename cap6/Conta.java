@@ -1,12 +1,32 @@
 class Conta {
 
 	int numero;
-	Cliente titular = new Cliente();
 	private double saldo;
 	private double limite;
+	private Cliente titular = new Cliente();
 
-	public double pegaSaldo() {
+	public double getSaldo() {
 		return this.saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public double getLimite() {
+		return this.limite;
+	}
+
+	public void setLimite(double limite) {
+		this.limite = limite;
+	}
+
+	public Cliente getTitular() {
+		return this.titular;
+	}
+
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
 	}
 	
 	public void saca (double valor) {
