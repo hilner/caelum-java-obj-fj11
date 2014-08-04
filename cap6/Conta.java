@@ -5,6 +5,10 @@ class Conta {
 	private double limite;
 	private Cliente titular = new Cliente();
 
+	Conta() {
+		System.out.println("Construindo uma conta.");	
+	}
+	
 	public double getSaldo() {
 		return this.saldo + this.limite;
 	}
