@@ -13,10 +13,6 @@ class Conta {
 		this.saldo = saldo;
 	}
 
-	public double getLimite() {
-		return this.limite;
-	}
-
 	public void setLimite(double limite) {
 		this.limite = limite;
 	}
