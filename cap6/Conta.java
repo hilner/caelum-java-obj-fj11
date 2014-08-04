@@ -30,12 +30,16 @@ class Conta {
 		if (valor > this.saldo + this.limite) {
 			System.out.println("Não posso sacar fora do limite!");
 		} else {
-			this.saldo = this.saldo - valor;
+			this.saldo -= valor;
 		}
 	}
 
-	void deposita (double quantidade) {
-		this.saldo += quantidade;
+	public void deposita (double quantidade) {
+		if (quantidade < 0) {
+			System.out.println("Valor negativo não permitido!");
+		} else {
+			this.saldo += quantidade;
+		}
 	}
 
 	void transferePara(Conta destino, double valor) {
