@@ -5,6 +5,10 @@ class Conta {
 	private double saldo;
 	private double limite;
 
+	public double pegaSaldo() {
+		return this.saldo;
+	}
+	
 	public void saca (double valor) {
 		// posso sacar até saldo+limite
 		if (valor > this.saldo + this.limite) {
