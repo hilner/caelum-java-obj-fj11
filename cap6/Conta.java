@@ -3,11 +3,10 @@ class Conta {
 	int numero;
 	private double saldo;
 	private double limite;
-	private Cliente titular = new Cliente();
+	private Cliente titular;// = new Cliente();
 
-	Conta() {
-		// construtor não é um método
-		System.out.println("Construindo uma conta.");	
+	Conta(Cliente titular) {
+		this.titular = titular;
 	}
 
 	public double getSaldo() {
