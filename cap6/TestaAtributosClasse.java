@@ -8,5 +8,9 @@ class TestaAtributosClasse {
 		
 		Conta c1 = new Conta(carlos);
 
+		int total = c1.getTotalDeContas();
+
+		System.out.println("\n***Total de contas criadas " + total);
+
 	}
 }

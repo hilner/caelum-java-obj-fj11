@@ -1,5 +1,5 @@
 class Conta {
-	private int totalDeContas;
+	private static int totalDeContas;
 
 	int numero;
 	private double saldo;
@@ -8,10 +8,14 @@ class Conta {
 
 	Conta(Cliente titular) {
 		this.titular = titular;
-		this.totalDeContas++;
-		System.out.println("\nTotal de Contas: " + this.totalDeContas);
+		Conta.totalDeContas++;
+		System.out.println("\nTotal de Contas: " + Conta.totalDeContas);
 	}
 
+	public int getTotalDeContas() {
+		return Conta.totalDeContas;
+	}
+	
 	public double getSaldo() {
 		return this.saldo + this.limite;
 	}
