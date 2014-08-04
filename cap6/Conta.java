@@ -12,10 +12,10 @@ class Conta {
 		System.out.println("\nTotal de Contas: " + Conta.totalDeContas);
 	}
 
-	public int getTotalDeContas() {
+	public static int getTotalDeContas() {
 		return Conta.totalDeContas;
 	}
-	
+
 	public double getSaldo() {
 		return this.saldo + this.limite;
 	}
