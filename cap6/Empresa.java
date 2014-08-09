@@ -6,9 +6,22 @@ class Empresa {
 	// constructor
 	public Empresa() {
 		tam = 0;
-		//empregados = new Funcionario[10];
 	}
 
+	public Empresa(int quantidade) {
+		this.empregados = new Funcionario[quantidade];
+
+	}
+	// Funcionário
+	public Funcionario getFuncionario(int posicao) {
+		return this.empregados[posicao];
+	}
+
+	public void setFuncionario(Funcionario f) {
+		adiciona(f);
+	}
+
+	// CNPJ
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
 	}
@@ -17,10 +30,11 @@ class Empresa {
 		return cnpj;
 	}
 
-	void adiciona(Funcionario f) {
+	// encapsulado
+	private void adiciona(Funcionario f) {
 		if (tam < empregados.length) {
 			empregados[tam] = f;
-			empregados[tam].mostra();
+			//empregados[tam].mostra();
 			tam++;
 		} else {
 			System.out.println("\nVagas preenchidas!");
@@ -30,9 +44,7 @@ class Empresa {
 	void mostraEmpregados() {
 		System.out.println();
 		for (Funcionario i : empregados) { // enhanced-for
-			System.out.println("Funcionário na posição: " + i);
 			i.mostra();
-
 		}
 	}
 
