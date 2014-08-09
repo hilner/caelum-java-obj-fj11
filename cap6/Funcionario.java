@@ -14,12 +14,12 @@ class Funcionario {
 		salario = 0.0;
 	}
 
-	public static int getID() {
-		return Funcionario.identificador;
-	}
-
 	public Funcionario(String nome) {
 		this.nome = nome;
+	}
+
+	public static int getID() {
+		return Funcionario.identificador;
 	}
 
 	// rg
