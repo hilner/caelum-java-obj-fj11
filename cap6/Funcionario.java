@@ -5,6 +5,10 @@ class Funcionario {
 	private String rg;
 	private boolean estaNaEmpresa;
 
+	public Funcionario() {
+		salario = 0.0;
+	}
+	
 	// rg
 	public void setRG(String rg) {
 		this.rg = rg;
