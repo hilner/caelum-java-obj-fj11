@@ -1,6 +1,6 @@
 class Funcionario {
 	
-	private static int ID;
+	private static int identificador;
 
 	private String nome;
 	private String departamento;
@@ -9,13 +9,13 @@ class Funcionario {
 	private boolean estaNaEmpresa;
 
 	public Funcionario() {
-		Funcionario.ID++;
+		Funcionario.identificador++;
 		nome = "sem nome";
 		salario = 0.0;
 	}
 
 	public static int getID() {
-		return Funcionario.ID;
+		return Funcionario.identificador;
 	}
 
 	public Funcionario(String nome) {
