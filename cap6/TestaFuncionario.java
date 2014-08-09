@@ -1,6 +1,8 @@
 class TestaFuncionario {
 	public static void main(String[] args) {
-		Funcionario f1 = new Funcionario();
+		Funcionario f1 = new Funcionario("Antonio");
+
+		System.out.println("Nome inicial do Funcionario "+ f1.getNome());
 
 		f1.setNome("José");
 		f1.setDepartamento("Tecnologia");

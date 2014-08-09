@@ -6,9 +6,14 @@ class Funcionario {
 	private boolean estaNaEmpresa;
 
 	public Funcionario() {
+		nome = "sem nome";
 		salario = 0.0;
 	}
-	
+
+	public Funcionario(String nome) {
+		this.nome = nome;
+	}
+
 	// rg
 	public void setRG(String rg) {
 		this.rg = rg;
