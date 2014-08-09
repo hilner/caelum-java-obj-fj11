@@ -1,15 +1,52 @@
 class Funcionario {
-	String nome;
-	String departamento;
+	private String nome;
+	private String departamento;
 	private double salario;
-	String rg;
-	boolean estaNaEmpresa;
+	private String rg;
+	private boolean estaNaEmpresa;
 
+	// rg
+	public void setRG(String rg) {
+		this.rg = rg;
+		System.out.println("Identidade: " + rg);
+	}
+
+	public String getRG() {
+		return rg;
+	}
+
+	// nome
+	public void setNome(String nome) {
+		this.nome = nome;
+		System.out.println("Nome do Funcionario é " + nome);
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	// departamento
+	public void setDepartamento(String departamento) {
+		this.departamento = departamento;			
+		System.out.println("Departamento " + departamento);
+	}
+
+	// estaNaEmpresa ?
+	public void setEstaNaEmpresa(boolean estaNaEmpresa) {
+		this.estaNaEmpresa = estaNaEmpresa;
+		System.out.println("Esta na empresa: " + estaNaEmpresa);
+	}
+
+	public boolean getEstaNaEmpresa() {
+		return estaNaEmpresa;
+	}
+
+	// salario 
 	public double getSalario() {
 		return this.salario;	
 	}
 
-	public void setSalario(double Salario) {
+	public void setSalario(double salario) {
 		this.salario = salario;
 		System.out.println("Definido salário de: " + salario);
 	}
