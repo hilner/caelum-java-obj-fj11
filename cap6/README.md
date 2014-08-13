@@ -1,7 +1,7 @@
 Caelum-java-obj-fj11
 ====================
 
-Modificadores de acesso e atributos de classe.
+Modificadores de acesso e atributos de classe
 
 Ao término deste capítulo, você será capaz de:
 
@@ -9,3 +9,5 @@ Ao término deste capítulo, você será capaz de:
 	• escrever métodos de acesso a atributos do tipo getters e setters;
 	• escrever construtores para suas classes;
 	• utilizar variáveis para suas classes;
+
+Segue exercícios...
