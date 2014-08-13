@@ -1,7 +1,7 @@
 Caelum-java-obj-fj11
 ====================
 
-Modificadores de acesso e atributos de classe
+Modificadores de acesso e atributos de classe.
 
 Ao término deste capítulo, você será capaz de:
 
