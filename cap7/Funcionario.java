@@ -2,11 +2,11 @@ class Funcionario {
 	
 	private static int identificador;
 
-	private String nome;
-	private String departamento;
-	private double salario;
-	private String rg;
-	private boolean estaNaEmpresa;
+	protected String nome;
+	protected String departamento;
+	protected double salario;
+	protected String rg;
+	protected boolean estaNaEmpresa;
 
 	public Funcionario() {
 		Funcionario.identificador++;
