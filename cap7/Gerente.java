@@ -16,4 +16,6 @@ class Gerente extends Funcionario {
 			return false;
 		}
 	}
+
 }
+

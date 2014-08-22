@@ -22,6 +22,11 @@ class Funcionario {
 		return Funcionario.identificador;
 	}
 
+	// 
+	public double getBonificacao() {
+		return this.salario * 0.10;
+	}
+
 	// rg
 	public void setRG(String rg) {
 		this.rg = rg;
