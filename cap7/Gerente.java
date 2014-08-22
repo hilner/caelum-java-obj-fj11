@@ -6,7 +6,8 @@ class Gerente extends Funcionario {
 		System.out.println("Gerando senha!");
 		this.senha = senha;
 	}
-	// 
+	
+	@Override
 	public double getBonificacao() {
 		return this.salario * 0.15;
 	}
