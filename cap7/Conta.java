@@ -3,10 +3,12 @@ public class Conta {
 
 	public void deposita(double valor) {
 		this.saldo += valor;
+		System.out.println("Depósito... " + valor);
 	}
 
 	public void saca(double valor) {
 		this.saldo -= valor;
+		System.out.println("Saque...... " + valor);
 	}
 
 	public double getSaldo() {

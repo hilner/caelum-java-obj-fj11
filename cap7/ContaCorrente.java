@@ -5,5 +5,7 @@ public class ContaCorrente extends Conta {
 
 	public void deposita(double valor) {
 		this.saldo += valor - 0.10;
+		// reescrita 		
+		System.out.println("Depósito... " + valor);
 	}
 }
